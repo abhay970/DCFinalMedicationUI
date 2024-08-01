@@ -1,0 +1,69 @@
+<template>
+    <!-- Provider Details Section -->
+    <div class="provider-details-container" onclick={handleShow} data-target-id={item.id}>
+        <template lwc:if={showProviderSearchResultCardDB}>
+            <lightning-icon icon-name="utility:chevrondown" size='xx-small' class="slds-var-p-horizontal_x-small custom-icon"></lightning-icon>
+        </template>
+        <template lwc:else>
+            <lightning-icon icon-name="utility:chevronright" size='xx-small' class="slds-var-p-horizontal_x-small custom-icon"></lightning-icon>
+        </template>
+        <p class="provider-details-text">{item.patientName}</p>
+    </div>
+
+    <template lwc:if={showProviderSearchResultCardDB}>
+        <!-- MedicationRequest Details section -->
+        <div class="provider-details-containerss provider-details-texts" onclick={handleShowOn}>
+            <template lwc:if={PernalDetail}>
+                <lightning-icon icon-name="utility:chevrondown" size='xx-small' class="slds-var-p-horizontal_x-small"></lightning-icon>
+            </template>
+            <template lwc:else>
+                <lightning-icon icon-name="utility:chevronright" size='xx-small' class="slds-var-p-horizontal_x-small"></lightning-icon>
+            </template>
+            <p class="provider-details-text12"><b>Medication Request</b></p>
+        </div>
+        <template lwc:if={PernalDetail}>
+            <template for:each={item.medicationRequest} for:item="item1">
+                <div key={item1.id}>
+                    <c-medication-child item={item1}></c-medication-child>
+                </div>
+            </template>
+            <!-- <div class="custom-table-container">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Identifier</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={item.medrequest} for:item="item1">
+                            <tr key={item1.id__c}>
+                                <td class="truncate">{item1.category__c}</td>
+                                <td class="truncate">{item1.identifier__c}</td>
+                                <td class="truncate">{item1.status__c}</td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <span class="page-info">{medRequestPage} / {totalMedRequestPages}</span>
+                    <button onclick={prevPageMedRequest} disabled={isFirstPageMedRequest}>&lt;</button>
+                    <button onclick={nextPageMedRequest} disabled={isLastPageMedRequest}>&gt;</button>
+                </div>
+            </div> -->
+        </template>
+        <!-- MedicationRequest Details section end -->
+<br>
+<br>
+<br>
+<br>
+        <!-- Medication Details section -->
+        
+      
+        <!-- Medication Details section end -->
+
+        <!-- Practitioner Details section -->
+                <!-- Practitioner Details section end -->
+    </template>
+</template>
