@@ -22,48 +22,17 @@
             <p class="provider-details-text12"><b>Medication Request</b></p>
         </div>
         <template lwc:if={PernalDetail}>
-            <template for:each={item.medicationRequest} for:item="item1">
+            <template for:each={paginatedRequestLabels} for:item="item1">
                 <div key={item1.id}>
-                    <c-medication-child item={item1}></c-medication-child>
+                    <c-medication-child item={item1} label={item1.label}></c-medication-child>
                 </div>
             </template>
-            <!-- <div class="custom-table-container">
-                <table class="custom-table">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Identifier</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <template for:each={item.medrequest} for:item="item1">
-                            <tr key={item1.id__c}>
-                                <td class="truncate">{item1.category__c}</td>
-                                <td class="truncate">{item1.identifier__c}</td>
-                                <td class="truncate">{item1.status__c}</td>
-                            </tr>
-                        </template>
-                    </tbody>
-                </table>
-                <div class="pagination">
-                    <span class="page-info">{medRequestPage} / {totalMedRequestPages}</span>
-                    <button onclick={prevPageMedRequest} disabled={isFirstPageMedRequest}>&lt;</button>
-                    <button onclick={nextPageMedRequest} disabled={isLastPageMedRequest}>&gt;</button>
-                </div>
-            </div> -->
+            <!-- Custom Pagination controls -->
+            <div class="pagination">
+                <span class="page-info">{practitionerPage} / {totalPractitionerPages}</span>
+                <button onclick={prevPagePractitioner} disabled={isFirstPage}>&lt;</button>
+                <button onclick={nextPagePractitioner} disabled={isLastPage}>&gt;</button>
+            </div>
         </template>
-        <!-- MedicationRequest Details section end -->
-<br>
-<br>
-<br>
-<br>
-        <!-- Medication Details section -->
-        
-      
-        <!-- Medication Details section end -->
-
-        <!-- Practitioner Details section -->
-                <!-- Practitioner Details section end -->
     </template>
 </template>

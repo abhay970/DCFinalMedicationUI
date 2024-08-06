@@ -24,7 +24,7 @@ export default class PatientsDetails1 extends LightningElement {
             })
             .catch(error => {
                 console.error('handleSearchDeB error:', error);
-                this.showToast('Error', error.message, 'error');
+                this.showToast('Invalid Patient ID', 'Please enter a correct Patient ID.', 'error');
                 this.showMain = true;
                 this.showResult = false;
             });

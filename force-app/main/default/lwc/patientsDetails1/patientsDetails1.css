@@ -15,6 +15,7 @@
 .input-container {
     width: 70%;
     margin: 0 auto;
+    font-size: large;
 }
 
 .input-field {
@@ -30,3 +31,9 @@
     margin-left: 3px;
     margin-bottom: 10px;
 }
+/* patientsDetailsChild1.css or your component's CSS file */
+.input-container lightning-input::part(label) {
+   
+}
+
+

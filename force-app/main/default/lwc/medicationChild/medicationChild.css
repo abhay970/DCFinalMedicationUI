@@ -69,7 +69,7 @@
     margin-bottom: 4px;
 }
 .custom-table {
-    width: 98%;
+    width: 96.6%;
     border-collapse: collapse;
     /* margin: 10px 0; */
     /* font-size: 12px; */
@@ -132,9 +132,9 @@
     color: black;
 }
 .provider-details-containerss1 {
-    width: 87%;
+    width: 88.5%;
     /* margin: 0 auto; */
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid #000; 
     /* border: 10px solid #c02b35;  */
     padding: 10px;
