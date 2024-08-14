@@ -1,0 +1,118 @@
+/* Container for the toggle section */
+.provider-details-containerss {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #d8dde6;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Toggle icon styling */
+.provider-details-containerss .slds-var-p-horizontal_x-small {
+    margin-right: 0.25rem;
+}
+
+/* Text styling for section headers */
+.provider-details-text12 {
+    font-size: 14px;
+    margin: 0;
+    display: inline-block;
+}
+
+/* Ensures section headers align with the toggle icon */
+.provider-details-texts {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #d8dde6;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    margin-bottom: 0.5rem; /* Adds space between sections */
+}
+
+/* Container for the table */
+.custom-table-container {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    overflow-x: auto;
+}
+
+/* Table styling */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #f4f4f4;
+}
+
+/* Truncate class for text overflow */
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Pagination container styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px;
+    padding: 10px; */
+    /* background-color: #f4f4f4; */
+    border-radius: 5px;
+    /* border: 1px solid #ddd; */
+}
+
+/* Pagination button styles */
+.pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+/* Hover state for pagination buttons */
+.pagination button:hover {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
+
+/* Disabled state for pagination buttons */
+.pagination button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+.pagination .pagination-icon {
+    margin: 0 10px;
+}
+/* Page information styling */
+.page-info {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Container for Medication Request ID */
+.med-request-item {
+    border: 1px solid #d8dde6;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+

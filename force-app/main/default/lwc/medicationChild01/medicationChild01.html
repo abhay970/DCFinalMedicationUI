@@ -1,0 +1,111 @@
+<template>
+    <!-- Provider Details Section -->
+    <div class="provider-details-containersss" onclick={handleShow} data-target-id={item.id}>
+        <template lwc:if={showProviderSearchResultCardDB}>
+            <lightning-icon icon-name="utility:chevrondown" size='xx-small' class="slds-var-p-horizontal_x-small custom-icon"></lightning-icon>
+        </template>
+        <template lwc:else>
+            <lightning-icon icon-name="utility:chevronright" size='xx-small' class="slds-var-p-horizontal_x-small custom-icon"></lightning-icon>
+        </template>
+        <p class="provider-details-text">{label}</p>
+    </div>
+    <!-- <br/> -->
+    <template lwc:if={showProviderSearchResultCardDB}>
+        <!-- MedicationRequest Details section -->
+        <div class="provider-details-texts" onclick={handleShowOn}>
+            <template lwc:if={PernalDetail}>
+                <lightning-icon icon-name="utility:chevrondown" size='xx-small' class="slds-var-p-horizontal_x-small"></lightning-icon>
+            </template>
+            <template lwc:else>
+                <lightning-icon icon-name="utility:chevronright" size='xx-small' class="slds-var-p-horizontal_x-small"></lightning-icon>
+            </template>
+            <p class="provider-details-text12">Medication Request Details</p>
+        </div>
+        <template lwc:if={PernalDetail}>
+            <div class="custom-table-container">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Identifier</th>
+                            <th>Status</th>
+                            <th>CourseOfTherapyType</th> 
+                            <th>MedicationRequest Id</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="truncate">{item.category}</td>
+                            <td class="truncate">{item.identifier}</td>
+                            <td class="truncate">{item.status}</td>
+                            <td class="truncate">{item.courseOfTherapyType}</td>
+                            <td class="truncate">{item.id}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </template>
+
+        <!-- Medication Details section -->
+        <div class="provider-details-texts" onclick={handleShowTw}>
+            <template lwc:if={specialties}>
+                <lightning-icon icon-name="utility:chevrondown" size='xx-small' class="slds-var-p-horizontal_x-small"></lightning-icon>
+            </template>
+            <template lwc:else>
+                <lightning-icon icon-name="utility:chevronright" size='xx-small' class="slds-var-p-horizontal_x-small"></lightning-icon>
+            </template>
+            <p class="provider-details-text">Medication Details</p>
+        </div>
+        <template lwc:if={specialties}>
+            <div class="custom-table-container">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Medication Id</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={item.medications} for:item="item2">
+                            <tr key={item2.id}>
+                                <td class="truncate">{item2.display}</td>
+                                <td class="truncate">{item2.Medication_Id}</td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </template>
+
+        <!-- Practitioner Details section -->
+        <div class="provider-details-texts" onclick={handleShowThr}>
+            <template lwc:if={insurancesDetails}>
+                <lightning-icon icon-name="utility:chevrondown" size='xx-small' class="slds-var-p-horizontal_x-small"></lightning-icon>
+            </template>
+            <template lwc:else>
+                <lightning-icon icon-name="utility:chevronright" size='xx-small' class="slds-var-p-horizontal_x-small"></lightning-icon>
+            </template>
+            <p class="provider-details-text">Practitioner Details</p>
+        </div>
+        <template lwc:if={insurancesDetails}>
+            <div class="custom-table-container">
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={item.practioners} for:item="item3">
+                            <tr key={item3.Practitioner_Id}>
+                                <td class="truncate">{item3.display}</td>
+                                <td class="truncate">{item3.Practitioner_Id}</td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </template>
+    </template>
+</template>

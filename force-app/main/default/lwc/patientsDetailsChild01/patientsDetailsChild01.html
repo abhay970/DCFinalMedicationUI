@@ -1,0 +1,30 @@
+<template>
+    <!-- Medication Request Details section -->
+    <div class="provider-details-containerss" onclick={handleShowOn}>
+        <template lwc:if={PernalDetail}>
+            <lightning-icon icon-name="utility:chevrondown" size='xx-small' class="slds-var-p-horizontal_x-small"></lightning-icon>
+        </template>
+        <template lwc:else>
+            <lightning-icon icon-name="utility:chevronright" size='xx-small' class="slds-var-p-horizontal_x-small"></lightning-icon>
+        </template>
+        <!-- <div> -->
+        <p class="provider-details-text12"><b>Medication Request</b></p>
+    </div>
+    <template lwc:if={PernalDetail}>
+        <template for:each={paginatedRequestLabels} for:item="item1">
+            <div key={item1.id} class="med-request-item">
+                <!-- <div class="med-request-id">{item1.label}</div> -->
+                <c-medication-child01 item={item1} label={item1.label}></c-medication-child01>
+            </div>
+        </template>
+        <div class="pagination">
+            <button class="pagination-icon" onclick={prevPagePractitioner} disabled={isFirstPage}>&lt;</button>
+            <span class="page-info">{currentPage} / {totalPages}</span>
+            <button class="pagination-icon" onclick={nextPagePractitioner} disabled={isLastPage}>&gt;</button>
+        </div>
+    </template>
+    <!-- <template lwc:if={PernalDetail}>
+       
+    </template> -->
+<!-- </div> -->
+</template>

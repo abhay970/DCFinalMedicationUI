@@ -1,7 +1,7 @@
 public class DataCloudOauth2 {
     
     public static Map<String,Object> getAccessToken2(String accessTokens, String input) {
-        String endpoint = 'https://ka1721905524179.my.salesforce.com/services/a360/token';
+        String endpoint = 'https://ka1721901639871.my.salesforce.com/services/a360/token';
         String accessToken = accessTokens;
         String grantType = 'urn:salesforce:grant-type:external:cdp';
         String subjectToken = accessTokens;

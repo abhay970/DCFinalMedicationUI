@@ -1,0 +1,12 @@
+<template>
+    <template if:true={showResult}>
+        <div class="slds-card custom-card-back">
+            <!-- Remove provider details section -->
+            <template for:each={providerData} for:item="item">
+                <div key={item.id}>
+                    <c-patients-details-child01 item={item}></c-patients-details-child01>
+                </div>
+            </template>
+        </div>
+    </template>
+</template>

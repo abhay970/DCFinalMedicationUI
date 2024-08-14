@@ -2,9 +2,9 @@ public class OAuthExample2 {
     @AuraEnabled
     public static List<Object> getAccessToken2(String input) {
         String endpoint = 'https://login.salesforce.com/services/oauth2/token';
-        String clientId = '3MVG9H_KVs6V9LiP.vS5LDnOR13E4Z2QskHKiJKPqu6dg5q88foj_gHq1kWEQXv97VHT6b6VcM_RzRftnPm67';
-        String clientSecret = 'A8C9045442442F6F8D485095FE0BB6EDDB8EAFF03CAA56AAC5CA68D90408A4A0';
-        String username = 'deekshithgowda978@gmail.com2024/07/25_16-35-7.demo';
+        String clientId = '3MVG9jSKmPAPVo2KSuUmd0_YbjzXRIjxzl8JreFyVg2LENX08V.TjmuOrRzNRp.lC4knRSaqytXHv2Fw1Llbw';
+        String clientSecret = '2E6BC395244DE09EB4E262B002F96D31FBD97528BA42532B3B305A9CD58C4D2C';
+        String username = 'abhay.kumar.yadav@techkasetti.com2024/07/25_15-30-0.demo';
         String password = 'Kasetti@555';
         String grantType = 'password';
         HttpRequest req = new HttpRequest();
@@ -140,3 +140,70 @@ Medication Request
         "Practitioner_Type__c": "Practitioner"
 }
  */
+/* //e.Rxkbv0HmfyDyboA-LtyRQ3 //2
+(
+{
+    medicationRequest=(
+    {
+        category=Community,
+        courseOfTherapyType=Short course (acute) therapy,
+        id=emhFW-QGYoC9ijvvE.RB4cw3,
+        identifier=882174,
+        medications=({Medication_Id=e0Ew1aWmg6Y6qNCaOcI7KrbLwuOv1alZn5-InWqC4RQCerkX-9.LpqaKJagAzmpnH3_emhFW-QGYoC9ijvvE.RB4cw3, display=prenatal multivitamin tablet 90-600-400 mg-mcg-mcg, id=e0Ew1aWmg6Y6qNCaOcI7KrbLwuOv1alZn5-InWqC4RQCerkX-9.LpqaKJagAzmpnH3}),
+        practioners=({Practitioner_Id=emhFW-QGYoC9ijvvE.RB4cw3_eHdBpsN5eOyFCM2cUPgGuTw3, Practitioner_Type=Practitioner, display=Physician Obstetrics, MD}),
+        status=completed
+    },
+    {
+        category=Community,
+        courseOfTherapyType=Short course (acute) therapy,
+        id=eJk0ebNUOTKx9f80aYoZPHg3,
+        identifier=882173,
+        medications=({Medication_Id=en0IpPR7jJ9u2aTvV-F20Tj7oIUehIqKfygWYu5Tt9l2GpPo3ZYvVCUT5TKmWwCU63_eJk0ebNUOTKx9f80aYoZPHg3, display=CALCIUM + D PO, id=en0IpPR7jJ9u2aTvV-F20Tj7oIUehIqKfygWYu5Tt9l2GpPo3ZYvVCUT5TKmWwCU63}),
+        practioners=({Practitioner_Id=eJk0ebNUOTKx9f80aYoZPHg3_eyOHsvt3quDQ4aJ38tl.ywQ3, Practitioner_Type=Practitioner, display=Nurse Obstetrics, RN}),
+        status=active
+    }
+    ),
+    patientName=Beth Ambulatory
+}
+)
+    // e63wRTbPfr1p8UW81d8Seiw3 //41
+(
+{
+    medicationRequest=(
+    {
+        category=Community,
+        courseOfTherapyType=Continuous long term therapy,
+        id=e8tqF7AOiwUNhJaxzoIw0qg3,
+        identifier=795609,
+        medications=({Medication_Id=eA9IZM.lvQVOXTDPYrt97mlpkKP-IA8uqi13-ol1iBooh3tuU1tL0hPsqP0Rbdie13_e8tqF7AOiwUNhJaxzoIw0qg3, display=levothyroxine (SYNTHROID, LEVOTHROID) tablet, id=eA9IZM.lvQVOXTDPYrt97mlpkKP-IA8uqi13-ol1iBooh3tuU1tL0hPsqP0Rbdie13}),
+        practioners=({Practitioner_Id=e8tqF7AOiwUNhJaxzoIw0qg3_eM5CWtq15N0WJeuCet5bJlQ3, Practitioner_Type=Practitioner, display=Physician Family Medicine, MD}),
+        status=stopped
+    },
+    {
+        category=Community,
+        courseOfTherapyType=Short course (acute) therapy,
+        id=exiz.ZObtxw12ValOoSpZlg3,
+        identifier=795594,
+        medications=({Medication_Id=eFaEzG1KIkTzmJpqIINo7DLDDQX6der9VagOhEqrEsBu8LhOOqS93TGadqaIvPhU43_exiz.ZObtxw12ValOoSpZlg3, display=codeine-guaiFENesin (ROBITUSSIN AC) solution, id=eFaEzG1KIkTzmJpqIINo7DLDDQX6der9VagOhEqrEsBu8LhOOqS93TGadqaIvPhU43}),
+        practioners=({Practitioner_Id=exiz.ZObtxw12ValOoSpZlg3_eM5CWtq15N0WJeuCet5bJlQ3, Practitioner_Type=Practitioner, display=Physician Family Medicine, MD}),
+        status=stopped
+    },
+    {
+        category=Community,
+        courseOfTherapyType=Short course (acute) therapy, id=ezRJR9pRLAVlJikiOqBYh5w3,
+        identifier=795597,
+        medications=({Medication_Id=eAMyTcggmIulnQ2tTBjDzeLJGWnb4Gyb5iha5xA-6VoIpTl25hRmM87kHjcdjbszl3_ezRJR9pRLAVlJikiOqBYh5w3, display=dilTIAZem (CARDIZEM CD) 24 hr capsule, id=eAMyTcggmIulnQ2tTBjDzeLJGWnb4Gyb5iha5xA-6VoIpTl25hRmM87kHjcdjbszl3}),
+        practioners=({Practitioner_Id=ezRJR9pRLAVlJikiOqBYh5w3_eM5CWtq15N0WJeuCet5bJlQ3, Practitioner_Type=Practitioner, display=Physician Family Medicine, MD}),
+        status=stopped
+    },
+    {
+        category=Community,
+        courseOfTherapyType=Short course (acute) therapy, id=eUBJukF5lrPNlfMMa9HDZXw3,
+        identifier=795619,
+        medications=({Medication_Id=e4a358bdlVtjl8Jqsf3-8u7P2TlVymu2JSwaXzeM036xgMhUA4pzQ9xbkvz3JagvE3_eUBJukF5lrPNlfMMa9HDZXw3, display=famotidine (PEPCID) tablet, id=e4a358bdlVtjl8Jqsf3-8u7P2TlVymu2JSwaXzeM036xgMhUA4pzQ9xbkvz3JagvE3}),
+    practioners=({Practitioner_Id=eUBJukF5lrPNlfMMa9HDZXw3_eM5CWtq15N0WJeuCet5bJlQ3, Practitioner_Type=Practitioner, display=Physician Family Medicine, MD}), status=stopped}, {category=Community, courseOfTherapyType=Short course (acute) therapy, id=eZJROiQvIaaejlf3dbCFk.Q3, identifier=795528, medications=({Medication_Id=e0BheeIOZQc-iOBkCFq.OiIqJBNfJE0B9SDLPM99R.6SX6sKct.cGZvi3zZpI9LVO3_eZJROiQvIaaejlf3dbCFk.Q3, display=simvastatin (ZOCOR) tablet, id=e0BheeIOZQc-iOBkCFq.OiIqJBNfJE0B9SDLPM99R.6SX6sKct.cGZvi3zZpI9LVO3}), practioners=({Practitioner_Id=eZJROiQvIaaejlf3dbCFk.Q3_erqn5oyiA9.LpVQkQ2Ulmgg3, Practitioner_Type=Practitioner, display=Nurse Family Medicine, RN}), status=stopped}, {category=Community, courseOfTherapyType=Continuous long term therapy, id=e5NNEDjosAw.XzO1rL7jjlA3, identifier=795596, medications=({Medication_Id=eA9IZM.lvQVOXTDPYrt97mjbv.Tm.0SQbXZWtY8czyDq7JfX9NvCRjGlNw.dTTky53_e5NNEDjosAw.XzO1rL7jjlA3, display=levothyroxine (SYNTHROID, LEVOTHROID) tablet, id=eA9IZM.lvQVOXTDPYrt97mjbv.Tm.0SQbXZWtY8czyDq7JfX9NvCRjGlNw.dTTky53}), practioners=({Practitioner_Id=e5NNEDjosAw.XzO1rL7jjlA3_eM5CWtq15N0WJeuCet5bJlQ3, Practitioner_Type=Practitioner, display=Physician Family Medicine, MD}), status=stopped}, {category=Community, courseOfTherapyType=Continuous long term therapy, id=eOMPNfjFGsM8-tHu-XlhKGg3, identifier=795510, medications=({Medication_Id=ecQHtcUeYMZY3bU-i5wS-RjHvPbHLaVOjP8e8YYXlY6g4.zIkemSMsbADh37kEA6r3_eOMPNfjFGsM8-tHu-XlhKGg3, display=raNITIdine (ZANTAC) tablet, id=ecQHtcUeYMZY3bU-i5wS-RjHvPbHLaVOjP8e8YYXlY6g4.zIkemSMsbADh37kEA6r3}), practioners=({Practitioner_Id=eOMPNfjFGsM8-tHu-XlhKGg3_ebqdHGyh4nzNl573GUd3n2w3, Practitioner_Type=Practitioner, display=Admin Ambulatory}), status=active}, {category=Community, courseOfTherapyType=Continuous long term therapy, id=efvM5qpkvUBgJh5FqwCHEXg3, identifier=795525, medications=({Medication_Id=eA9IZM.lvQVOXTDPYrt97mouxjjiSRKLySZYWxtooEnI2npqIWgF2fuC5UQCp5Vz23_efvM5qpkvUBgJh5FqwCHEXg3, display=levothyroxine (SYNTHROID, LEVOTHROID) tablet, id=eA9IZM.lvQVOXTDPYrt97mouxjjiSRKLySZYWxtooEnI2npqIWgF2fuC5UQCp5Vz23}), practioners=({Practitioner_Id=efvM5qpkvUBgJh5FqwCHEXg3_eM5CWtq15N0WJeuCet5bJlQ3, Practitioner_Type=Practitioner, display=Physician Family Medicine, MD}), status=stopped}, {category=Community, courseOfTherapyType=Continuous long term therapy, id=eiOWgfIRUMAMXtjnWJjfprQ3, identifier=795512, medications=({Medication_Id=eQDEVHEtDuDIa0cKgnlYyN.Dbc1tmUn2T77rTQ1sn9St1MpfgIiVZoEaafPlCCOhd3_eiOWgfIRUMAMXtjnWJjfprQ3, display=atorvastatin (LIPITOR) tablet, id=eQDEVHEtDuDIa0cKgnlYyN.Dbc1tmUn2T77rTQ1sn9St1MpfgIiVZoEaafPlCCOhd3}), practioners=({Practitioner_Id=eiOWgfIRUMAMXtjnWJjfprQ3_ebqdHGyh4nzNl573GUd3n2w3, Practitioner_Type=Practitioner, display=Admin Ambulatory}), status=active}, {category=Community, courseOfTherapyType=Short course (acute) therapy, id=eN1-RQgDri5P8gf-IYzQD6w3, identifier=795625, medications=({Medication_Id=eBQbIRqmHguWneK5v8Og9Ew0sJaGJfB4G9QwrJr0jfddflL5BB2EIIfZBvWAftTI53_eN1-RQgDri5P8gf-IYzQD6w3, display=nicotine (NICODERM CQ) patch 14 mg/24 hr, id=eBQbIRqmHguWneK5v8Og9Ew0sJaGJfB4G9QwrJr0jfddflL5BB2EIIfZBvWAftTI53}), practioners=({Practitioner_Id=eN1-RQgDri5P8gf-IYzQD6w3_eM5CWtq15N0WJeuCet5bJlQ3, Practitioner_Type=Practitioner, display=Physician Family Medicine, MD}), status=stopped}, ...
+    ),
+    patientName=Theodore Mychart
+}
+)
+     */
